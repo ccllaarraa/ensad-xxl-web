@@ -1,0 +1,56 @@
+body {
+  font-family: nimbusreg;
+  background-color: #ff7de9;
+}
+
+.background {
+  img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+
+.navigation {
+  position: fixed;
+  color:#ff7de9 ;
+  top: 20px;
+  left: 20px;
+}
+
+
+.photos, .videos {
+  .navigation {
+    color:white ;
+  }
+}
+
+.photos {
+  padding: 10px;
+  .gallery {
+    img {
+      max-width: 700px;
+      max-height: 700px;
+    }
+  }
+}
+
+.videos {
+  padding: 10px;
+  .gallery {
+    display: flex;
+    gap: 10px;
+  }
+  
+  video {
+    max-width: 700px;
+    max-height: 700px;
+    object-fit: cover;
+    background: #111;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  .portrait {
+    max-height: fit-content;  }
+}
